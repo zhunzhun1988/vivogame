@@ -1,0 +1,108 @@
+{
+	"ImportPath": "test",
+	"GoVersion": "go1.12",
+	"GodepVersion": "v80",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/BurntSushi/freetype-go/freetype",
+			"Rev": "b763ddbfe298bf71c999a2833470da508f3a0677"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/freetype-go/freetype/raster",
+			"Rev": "b763ddbfe298bf71c999a2833470da508f3a0677"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/freetype-go/freetype/truetype",
+			"Rev": "b763ddbfe298bf71c999a2833470da508f3a0677"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/graphics-go/graphics",
+			"Rev": "b43f31a4a96688fba0b612e25e22648b9267e498"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/graphics-go/graphics/convolve",
+			"Rev": "b43f31a4a96688fba0b612e25e22648b9267e498"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/graphics-go/graphics/interp",
+			"Rev": "b43f31a4a96688fba0b612e25e22648b9267e498"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgb",
+			"Rev": "27f122750802c950b2c869a5b63dafcf590ced95"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgb/shape",
+			"Rev": "27f122750802c950b2c869a5b63dafcf590ced95"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgb/xinerama",
+			"Rev": "27f122750802c950b2c869a5b63dafcf590ced95"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgb/xproto",
+			"Rev": "27f122750802c950b2c869a5b63dafcf590ced95"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgbutil",
+			"Rev": "f7c97cef3b4e6c88280a5a7091c3314e815ca243"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgbutil/ewmh",
+			"Rev": "f7c97cef3b4e6c88280a5a7091c3314e815ca243"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgbutil/icccm",
+			"Rev": "f7c97cef3b4e6c88280a5a7091c3314e815ca243"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgbutil/keybind",
+			"Rev": "f7c97cef3b4e6c88280a5a7091c3314e815ca243"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgbutil/mousebind",
+			"Rev": "f7c97cef3b4e6c88280a5a7091c3314e815ca243"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgbutil/xevent",
+			"Rev": "f7c97cef3b4e6c88280a5a7091c3314e815ca243"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgbutil/xgraphics",
+			"Rev": "f7c97cef3b4e6c88280a5a7091c3314e815ca243"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgbutil/xprop",
+			"Rev": "f7c97cef3b4e6c88280a5a7091c3314e815ca243"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgbutil/xrect",
+			"Rev": "f7c97cef3b4e6c88280a5a7091c3314e815ca243"
+		},
+		{
+			"ImportPath": "github.com/BurntSushi/xgbutil/xwindow",
+			"Rev": "f7c97cef3b4e6c88280a5a7091c3314e815ca243"
+		},
+		{
+			"ImportPath": "github.com/golang/freetype/raster",
+			"Comment": "release-137-ge2365df",
+			"Rev": "e2365dfdc4a05e4b8299a783240d4a7d5a65d4e4"
+		},
+		{
+			"ImportPath": "github.com/golang/freetype/truetype",
+			"Comment": "release-137-ge2365df",
+			"Rev": "e2365dfdc4a05e4b8299a783240d4a7d5a65d4e4"
+		},
+		{
+			"ImportPath": "golang.org/x/image/font",
+			"Rev": "4e30a6eb7d9a7fbd8f97e1d47806f810d86cfc6e"
+		},
+		{
+			"ImportPath": "golang.org/x/image/math/fixed",
+			"Rev": "4e30a6eb7d9a7fbd8f97e1d47806f810d86cfc6e"
+		}
+	]
+}

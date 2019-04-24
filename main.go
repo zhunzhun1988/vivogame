@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"image/color"
+	"time"
 )
 
 type Item struct {
@@ -14,6 +16,25 @@ type Game struct {
 	items      []Item
 }
 
+func (g *Game) Move(str string) {
+	for i := 0; i < g.size*2+1; i++ {
+		if g.items[i].title == str && i != g.emptyIndex {
+			g.items[g.emptyIndex] = g.items[i]
+			g.emptyIndex = i
+			g.items[i].title = ""
+			return
+		}
+	}
+}
+func (g *Game) copy() *Game {
+	ret := &Game{
+		emptyIndex: g.emptyIndex,
+		size:       g.size,
+		items:      make([]Item, len(g.items)),
+	}
+	copy(ret.items, g.items)
+	return ret
+}
 func newGame(num int) *Game {
 	g := &Game{
 		emptyIndex: num,
@@ -85,14 +106,21 @@ func main() {
 	var num int
 	fmt.Printf("input num:")
 	fmt.Scanf("%d", &num)
+
 	g := newGame(num)
+	save := g.copy()
 	ans := make([]string, 100)
 	search(g, ans, 0)
 
+	w := NewWindow(1200, 800, num, color.RGBA{0x00, 0x00, 0x00, 0xff})
+	w.DrawStatus(save, "")
+
 	for i := 0; i < 100; i++ {
 		if ans[i] != "" {
-			fmt.Printf("%s ", ans[i])
+			w.Move(save, ans[i])
+
+			save.Move(ans[i])
 		}
 	}
-	fmt.Println()
+	time.Sleep(2 * time.Second)
 }
